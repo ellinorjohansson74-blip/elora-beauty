@@ -26,7 +26,22 @@ Webbplatsen är byggd med:
 - **JSON** för att lagra och läsa in artikelinnehåll.
 
 ## AI och automation
+Jag har använt AI som stöd under utvecklingen av webbplatsen, bland annat för idéer, textförslag, bilder och hjälp med HTML, CSS och JavaScript.
 
-Jag har använt AI som stöd under utvecklingen av webbplatsen, bland annat för idéer, textförslag, bilder och hjälp med kod.
+### AI-automation för artiklar
 
-Jag har även skapat en AI-stödd artikel
+Jag har skapat en AI-stödd lösning för att producera artiklar till ÉLORAs Beauty Journal. I projektmappen finns en AI-skill i `.agents/skills/create-article/SKILL.md` som innehåller instruktioner för hur AI ska skapa nya artiklar.
+
+Automationen utgår från ett valt ämne och hjälper till att skapa en artikel med rubrik, introduktion, underrubriker och brödtext. Artikeln följer webbplatsens JSON-struktur och sparas i mappen `artiklar`. JavaScript används sedan för att läsa in och visa artikelinnehållet på webbplatsen.
+
+### Mänsklig granskning
+
+AI-genererat innehåll behöver alltid granskas innan det publiceras. Jag kontrollerar att informationen är korrekt, att språket passar ÉLORAs varumärke och att artikeln är relevant för målgruppen.
+
+Jag granskar även bilder, stavning och artikelns struktur. Vid behov ändrar jag innehållet innan det publiceras på webbplatsen.
+
+### Feedback och förbättring
+
+Genom att granska resultatet kan jag identifiera vad AI gör bra och vad som behöver förbättras. Om artiklarna exempelvis blir för generella eller inte passar varumärkets tonalitet kan instruktionerna i AI-skillen justeras.
+
+På så sätt kan feedback användas för att förbättra framtida artiklar och göra processen mer effektiv, samtidigt som den mänskliga kontrollen finns kvar.
