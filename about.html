@@ -2,10 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | ÉLORA</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .about-page {
+        background-color: #fffdfb;
+        min-height: 80vh;
+        padding: 100px 24px;
+        text-align: center;
+        color: #68483e;
+      }
+
+      .about-page .eyebrow {
+        font-size: 12px;
+        letter-spacing: 4px;
+        color: #a66d80;
+        margin-bottom: 22px;
+      }
+
+      .about-page h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(32px, 5vw, 54px);
+        font-weight: normal;
+        margin-bottom: 35px;
+      }
+
+      .about-page .about-text {
+        max-width: 650px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 2;
+      }
+
+      .about-page .about-text p {
+        margin-bottom: 25px;
+      }
+
+      .about-page .back-link {
+        display: inline-block;
+        margin-top: 35px;
+        color: #a66d80;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 12px;
+        border-bottom: 1px solid #a66d80;
+        padding-bottom: 6px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Om oss</h1>
+    <header>
+      <h1>ÉLORA</h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="index.html#beauty">BEAUTY</a>
+      <a href="index.html#journal">JOURNAL</a>
+      <a href="about.html">ABOUT US</a>
+    </nav>
+
+    <main class="about-page">
+      <p class="eyebrow">GET TO KNOW US</p>
+
+      <h1>THE STORY OF ÉLORA</h1>
+
+      <div class="about-text">
+        <p>
+          At ÉLORA, we believe that beauty is found in simplicity. Our
+          philosophy is inspired by effortless elegance, natural radiance and
+          the confidence to embrace your individuality.
+        </p>
+
+        <p>
+          We celebrate the little moments that make you feel beautiful. From a
+          soft touch of blush to the perfect everyday lip, our world is all
+          about enhancing what makes you uniquely you.
+        </p>
+
+        <p>
+          ÉLORA is more than beauty. It's a feeling of confidence, simplicity
+          and timeless elegance.
+        </p>
+      </div>
+
+      <a href="index.html" class="back-link">BACK TO HOME</a>
+    </main>
+
+    <footer>
+      <p>ÉLORA © 2026 | BEAUTY IN ITS PUREST FORM</p>
+    </footer>
   </body>
 </html>
