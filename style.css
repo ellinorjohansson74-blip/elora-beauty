@@ -1,0 +1,622 @@
+/* =====================================
+   ÈLORA – BEAUTY & MAKEUP
+   ===================================== */
+
+/* FÄRGPALETT */
+
+:root {
+  --ljusrosa: #f8e5f1;
+  --chokladbrun: #68483e;
+  --cremevitt: #fffdfb;
+  --dustyrose: #a66d80;
+  --mjukrosa: #f5edf0;
+  --beige: #eee5df;
+}
+
+/* GRUNDINSTÄLLNINGAR */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cremevitt);
+  color: var(--chokladbrun);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+/* HEADER & LOGOTYP */
+
+header {
+  background-color: var(--ljusrosa);
+  text-align: center;
+  padding: 28px 20px;
+  border-bottom: 1px solid #ead5df;
+}
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 58px;
+  font-weight: normal;
+  letter-spacing: 8px;
+  color: var(--chokladbrun);
+}
+
+/* NAVIGATION */
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 22px;
+  background-color: var(--cremevitt);
+  border-bottom: 1px solid var(--beige);
+}
+
+.main-nav a {
+  color: var(--chokladbrun);
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--dustyrose);
+}
+
+/* ALLMÄNNA RUBRIKER */
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--dustyrose);
+  margin: 20px 0;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: normal;
+  color: var(--chokladbrun);
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* SMÅ RUBRIKER */
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dustyrose);
+  font-weight: bold;
+}
+
+/* =====================================
+   STARTSIDA / HERO
+   ===================================== */
+
+.hero {
+  min-height: 570px;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(135deg, #fffdfb 0%, #f8e5f1 55%, #eee5df 100%);
+}
+
+.hero h2 {
+  font-size: clamp(42px, 6vw, 76px);
+  max-width: 850px;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 15px auto 30px;
+}
+
+/* KNAPPAR */
+
+.button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--chokladbrun);
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 1px solid var(--chokladbrun);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--dustyrose);
+  border-color: var(--dustyrose);
+  color: white;
+}
+
+/* =====================================
+   PRODUKTSEKTION
+   ===================================== */
+
+.beauty-section {
+  padding: 100px 8%;
+  text-align: center;
+  background-color: var(--cremevitt);
+}
+
+.beauty-section h2 {
+  margin-bottom: 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 55px auto 0;
+}
+
+/* PRODUKTKORT */
+
+.product-card {
+  background-color: var(--mjukrosa);
+  padding: 55px 25px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-card:nth-child(2) {
+  background-color: var(--beige);
+}
+
+.product-card:nth-child(3) {
+  background-color: var(--ljusrosa);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(104, 72, 62, 0.12);
+}
+
+.product-card h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.product-card p {
+  font-size: 14px;
+  max-width: 230px;
+}
+
+/* =====================================
+   BEAUTY JOURNAL
+   ===================================== */
+
+.journal-section {
+  padding: 100px 8%;
+  background-color: var(--mjukrosa);
+  text-align: center;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 55px auto 0;
+}
+
+.article-grid article {
+  background-color: var(--cremevitt);
+  padding: 55px 30px;
+  min-height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.article-grid article:hover {
+  transform: translateY(-6px);
+}
+
+.article-grid h3 {
+  font-size: 24px;
+}
+
+.article-grid p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.article-grid a {
+  color: var(--dustyrose);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--dustyrose);
+  padding-bottom: 5px;
+}
+
+.article-grid a:hover {
+  color: var(--chokladbrun);
+}
+
+/* =====================================
+   NYHETSBREV
+   ===================================== */
+
+.newsletter {
+  background-color: var(--ljusrosa);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: var(--chokladbrun);
+}
+
+.newsletter p {
+  margin-bottom: 30px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.newsletter label {
+  width: 100%;
+  font-size: 13px;
+}
+
+.newsletter input {
+  padding: 16px;
+  border: 1px solid #d8bfc9;
+  background-color: white;
+  font-size: 14px;
+  width: 280px;
+  max-width: 100%;
+}
+
+.newsletter button {
+  padding: 17px 28px;
+  background-color: var(--chokladbrun);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: var(--dustyrose);
+}
+
+#form-message {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* =====================================
+   SIDFOT
+   ===================================== */
+
+footer {
+  background-color: var(--chokladbrun);
+  color: var(--cremevitt);
+  padding: 35px 20px;
+  text-align: center;
+}
+
+footer p {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* =====================================
+   BILDER
+   ===================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================================
+   MOBILANPASSNING
+   ===================================== */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  .main-nav {
+    gap: 18px;
+    padding: 18px 10px;
+  }
+
+  .main-nav a {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .hero {
+    min-height: 450px;
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 43px;
+  }
+
+  .beauty-section,
+  .journal-section {
+    padding: 70px 20px;
+  }
+
+  .product-grid,
+  .article-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    gap: 20px;
+  }
+
+  .newsletter {
+    padding: 70px 20px;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+/* ÈLORA – STOR KAMPANJBILD */
+
+.hero-image {
+  background-image: url("images/elora-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  padding: 40px;
+}
+
+/* ÈLORA – BEAUTY JOURNAL ARTIKELSIDA */
+
+.journal-article {
+  background-color: #faf6f4;
+  padding: 90px 20px 110px;
+  text-align: center;
+}
+
+.journal-article .eyebrow {
+  color: #b78391;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.journal-article h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #67483e;
+  margin-bottom: 20px;
+}
+
+.article-intro {
+  color: #795f57;
+  font-size: 15px;
+  margin-bottom: 45px;
+}
+
+.article-image {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  max-height: 650px;
+  object-fit: cover;
+  margin: 0 auto 60px;
+}
+
+.article-content {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.article-content h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: normal;
+  color: #67483e;
+  margin: 40px 0 20px;
+}
+
+.article-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #65554e;
+  margin-bottom: 24px;
+}
+
+.article-content a {
+  display: inline-block;
+  margin-top: 35px;
+  color: #a66f7e;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #a66f7e;
+  padding-bottom: 6px;
+}
+
+.article-content a:hover {
+  color: #67483e;
+}
+/* Tillbaka till Journal */
+.back-to-journal {
+  display: block;
+  width: fit-content;
+  margin: 45px auto 0;
+  color: #b77c91;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  border-bottom: 1px solid #b77c91;
+  padding-bottom: 5px;
+}
+
+.back-to-journal:hover {
+  color: #6b4a40;
+  border-bottom-color: #6b4a40;
+}
+
+/* ÈLORA - Produktsida */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  max-width: 1150px;
+  margin: 80px auto;
+  padding: 30px;
+  align-items: center;
+}
+
+.product-detail-image img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.product-detail-info h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #68483f;
+  margin: 15px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #68483f;
+  margin-bottom: 30px;
+}
+
+.product-description {
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.add-to-bag {
+  display: block;
+  width: 100%;
+  background-color: #68483f;
+  color: white;
+  border: none;
+  padding: 18px;
+  margin-top: 35px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.add-to-bag:hover {
+  background-color: #a87678;
+}
+
+.back-to-beauty {
+  display: inline-block;
+  margin-top: 30px;
+  color: #b8798c;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.back-to-beauty:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .product-detail-info h2 {
+    font-size: 32px;
+  }
+}
+.product-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-link:hover img {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+.product-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card h3 a:hover {
+  color: #a66d80;
+}

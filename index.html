@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Upptäck ÈLORA, en värld av modern beauty, makeup och skönhetsinspiration. Utforska våra produkter och Beauty Journal."
+    />
+
+    <title>ÈLORA | Beauty & Makeup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Sidhuvud med varumärke och navigering -->
+    <header>
+      <h1>ÈLORA</h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <a href="index.html">HOME</a>
+      <a href="#beauty">BEAUTY</a>
+      <a href="#journal">JOURNAL</a>
+      <a href="about.html">ABOUT US</a>
+    </nav>
+
+    <main>
+      <!-- Första sektionen presenterar varumärket -->
+      <section class="hero hero-image"></section>
+
+      <!-- Produktsektion med tre beautyprodukter -->
+      <section id="beauty" class="beauty-section">
+        <p class="eyebrow">THE ÈLORA EDIT</p>
+        <h2>Everyday essentials</h2>
+        <p>Elevate your everyday beauty routine.</p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <a href="produkt.html" class="product-link">
+              <img src="images/elora-lip.png" alt="ÈLORA The Lip Edit" />
+              <h3>THE LIP EDIT</h3>
+              <p>Glossy lips, effortless beauty.</p>
+            </a>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/elora-blush-korrigerad.png"
+              alt="ÈLORA Soft Blush"
+            />
+            <h3><a href="soft-blush.html">SOFT BLUSH</a></h3>
+            <p>A natural flush of colour.</p>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="images/elora-glow-endast-original.png"
+              alt="ÈLORA The Glow Edit"
+            />
+            <h3><a href="the-glow-edit.html">THE GLOW EDIT</a></h3>
+            <p>Your everyday luminous finish.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Artikellänkar till Beauty Journal -->
+      <section id="journal" class="journal-section">
+        <p class="eyebrow">THE BEAUTY JOURNAL</p>
+        <h2>Stories by ÈLORA</h2>
+        <p>Beauty inspiration, tips and discoveries.</p>
+
+        <div class="article-grid">
+          <article>
+            <img
+              src="images/elora-journal-everyday-glow.png"
+              alt="Natural glowing makeup look"
+            />
+            <h3>THE EVERYDAY GLOW</h3>
+            <p>Discover the secrets to radiant makeup.</p>
+            <a href="artikel.html?id=the-everyday-glow">READ MORE</a>
+          </article>
+
+          <article>
+            <img
+              src="images/elora-journal-perfect-lip.png"
+              alt="Glossy pink lips"
+            />
+            <h3>THE PERFECT LIP</h3>
+            <p>Find your signature lip combination.</p>
+            <a href="artikel.html?id=the-perfect-lip">READ MORE</a>
+          </article>
+
+          <article>
+            <img
+              src="images/elora-journal-less-is-more.png"
+              alt="Minimalistisk makeup i varma beige toner"
+            />
+            <h3>LESS IS MORE</h3>
+            <p>Explore the art of minimal makeup.</p>
+            <a href="artikel.html?id=less-is-more">READ MORE</a>
+          </article>
+
+          <article>
+            <img
+              src="images/summer-glow-new.png"
+              alt="Natural summer glow makeup look"
+            />
+            <h3>HOW TO ACHIEVE A NATURAL SUMMER GLOW</h3>
+            <p>Discover how to create a fresh, radiant summer look.</p>
+            <a href="artikel.html?id=how-to-achieve-a-natural-summer-glow"
+              >READ MORE</a
+            >
+          </article>
+
+          <article>
+            <img
+              src="images/soft-hydrated-lips.png"
+              alt="Soft and hydrated lips"
+            />
+            <h3>THE SECRET TO SOFT AND HYDRATED LIPS</h3>
+            <p>Simple tips for keeping your lips soft, smooth and hydrated.</p>
+            <a href="artikel.html?id=the-secret-to-soft-and-hydrated-lips"
+              >READ MORE</a
+            >
+          </article>
+
+          <article>
+            <img
+              src="images/everyday-makeup-new.png"
+              alt="Natural everyday makeup look"
+            />
+            <h3>THE ART OF EVERYDAY MAKEUP</h3>
+            <p>Discover simple makeup tips for an effortless everyday look.</p>
+            <a href="artikel.html?id=the-art-of-everyday-makeup">READ MORE</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Nyhetsbrevsformulär med JavaScript-bekräftelse -->
+      <section class="newsletter">
+        <h2>Join the ÈLORA Club</h2>
+        <p>Be the first to discover beauty news and inspiration.</p>
+
+        <form id="newsletter-form">
+          <label for="email">Your email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+
+        <p id="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <!-- Sidfot med varumärkesnamn -->
+    <footer>
+      <p>ÈLORA © 2026 | BEAUTY IN ITS PUREST FORM</p>
+    </footer>
+  </body>
+</html>
